@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230412171458">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__form form">
+					<div class="form__title">
+						<h1>Form example</h1>
+					</div>
+					<div class="form__link">
+						<a href="../index.html" class="">Home</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__body body">
+					<form action="" method="post">
+						<fieldset>
+							<legend>Личные данные</legend>
+							<div class="name__block block">
+								<label for="name">Имя</label>
+								<input autocomplete="off" type="text" name="name" class="input" placeholder="Ваше имя" />
+							</div>
+							<div class="name__block block">
+								<label for="lastname">Фамилия</label>
+								<input autocomplete="off" type="text" name="lastname" class="input"
+									placeholder="Ваша фамилия" />
+							</div>
+							<div class="name__block block">
+								<label for="date">Дата рождения</label>
+								<input data-datepicker type="text" name="date" class="input" placeholder="Ваша дата рождения">
+							</div>
+							<div class="name__block block">
+								<label for="radio">Male</label>
+								<div class="options">
+									<div class="option active"><input type="radio" value="1" name="form[type]" /></div>
+								</div>
+							</div>
+							<div class="name__block block">
+								<label for="radio">Female</label>
+								<div class="options">
+									<div class="option active"><input type="radio" value="2" name="form[type]" /></div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+					<form action="">
+						<fieldset>
+							<legend>Адресные данные</legend>
+							<div class="name__block block">
+								<label for="select">Город</label>
+								<select name="select" class="catalog-header__select">
+									<option value="1" selected="selected">Zaporozhie</option>
+									<option value="2">Kiev</option>
+									<option value="3">Harkov</option>
+									<option value="4">Odessa</option>
+								</select>
+							</div>
+							<div class="name__block block">
+								<label for="text">Улица</label>
+								<input autocomplete="off" type="text" name="text" class="input" placeholder="Ваша улица" />
+							</div>
+							<div class="name__block block">
+								<label for="number">Номер дома</label>
+								<input autocomplete="off" type="number" name="number" class="input" placeholder="Ваш номер дома"
+									min="1" max="10" step="1" />
+							</div>
+							<div class="name__block block">
+								<label for="number">Квартира</label>
+								<input autocomplete="off" type="number" name="number" class="input" placeholder="Ваша квартира"
+									min="1" max="10" step="1" />
+							</div>
+						</fieldset>
+					</form>
+					<form action="">
+						<fieldset>
+							<legend>Контактные данные</legend>
+							<div class="name__block block">
+								<label for="number">Мобильный</label>
+								<input autocomplete="off" type="number" name="number" class="input" min="3" max="12" step="1" />
+							</div>
+							<div class="name__block block">
+								<label for="number">Робочий</label>
+								<input autocomplete="off" type="number" name="number" class="input" min="3" max="12" step="1" />
+							</div>
+							<div class="name__block block">
+								<label for="number">Домашний</label>
+								<input autocomplete="off" type="number" name="number" class="input" min="3" max="12" step="1" />
+							</div>
+							<div class="name__block block">
+								<label for="email">Email</label>
+								<input autocomplete="off" type="email" name="email" class="input" placeholder="Ваш email" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="button__block">
+				<div class="button__container">
+					<div class="button__actions">
+						<button type="reset" name="reset" class="actions__button button button__border">Cencel</button>
+						<button type="submit" name="submit" class="actions__button button">Ok</button>
+						<button type="submit" name="submit" class="actions__button button"><a href="#">Выбрать
+								цвет</a></button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230412171458"></script>
+</body>
+
+</html>
